@@ -1,11 +1,13 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    color: white;
-    background: linear-gradient(-45deg, #00c6ff, #0072ff, #00c6ff, #0072ff);
+    color: rgb(44, 114, 164);
+    font-variant-emoji: emoji;
+    background-image: url('./images/weatherbg.jpg');
     background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
-    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: gradient 50s ease infinite;
 }
 
 @keyframes gradient {
@@ -45,11 +47,12 @@ body {
 .search input,
 .search button {
     border-radius: 8px;
+    border: 2px solid #000000;
     padding: 10px;
 }
 
 .btn {
-    background-color: #0072ff;
+    background-color: #545454;
     border: 1px solid #ffffff;
     color: white;
     padding: 10px 20px;
